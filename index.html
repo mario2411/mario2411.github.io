@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día de la Madre — Sra. Elena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="hero">
+      <h1 class="title">¡Feliz día de la madre Sra Elena!</h1>
+      <p class="hint" id="hint">Toca la flor para leer un mensaje especial</p>
+    </header>
+
+    <button type="button" class="flower-btn" id="flowerBtn" aria-expanded="false" aria-controls="messagePanel" aria-label="Abrir mensaje del Día de la Madre">
+      <span class="flower-shadow"></span>
+      <svg class="flower" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="petalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffb7c5" />
+            <stop offset="50%" style="stop-color:#ff6b8a" />
+            <stop offset="100%" style="stop-color:#e84d6f" />
+          </linearGradient>
+          <linearGradient id="centerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#fff4a8" />
+            <stop offset="100%" style="stop-color:#f0c94d" />
+          </linearGradient>
+        </defs>
+        <g class="stem-group">
+          <path class="stem" d="M100 115 Q 88 160 82 210" fill="none" stroke="#4a8f5c" stroke-width="6" stroke-linecap="round" />
+          <path class="leaf" d="M100 165 Q 125 155 130 175 Q 115 185 100 170" fill="#5cb378" stroke="#3d7a4f" stroke-width="1.5" />
+        </g>
+        <g class="petals">
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(0 100 85)" />
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(45 100 85)" />
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(90 100 85)" />
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(135 100 85)" />
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(180 100 85)" />
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(225 100 85)" />
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(270 100 85)" />
+          <ellipse cx="100" cy="85" rx="22" ry="38" fill="url(#petalGrad)" transform="rotate(315 100 85)" />
+        </g>
+        <circle class="flower-center" cx="100" cy="85" r="18" fill="url(#centerGrad)" stroke="#d4a017" stroke-width="2" />
+      </svg>
+    </button>
+
+    <section class="message-panel" id="messagePanel" hidden>
+      <div class="message-card">
+        <div class="message-inner">
+          <p>Hola Sra Elena, espero que su hija la esté consintiendo bastante hoy en su día y lo esté disfrutando mucho; con todo este tiempo usted se ha convertido en una madre para mí, gracias por todo lo que ha hecho por mí y por todas las veces que me ha alimentado jajaja❤️.</p>
+          <p>Solo quería desearle un feliz día de las madres y que tenga muchos éxitos en la vida.</p>
+          <p class="coupon">También como regalo este mensaje cuenta como un cupón válido para un pecadito de postre en Margarita Saieh👀🤤.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
